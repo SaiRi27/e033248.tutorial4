@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<style>
+img{
+    width: 400px;
+    transition: transform 0.8s ease;
+    
+
+}
+</style>
+<script>
+    function showImage(id, img){
+        const change = document.getElementById(id)   
+        change.src=img;
+        change.style.transform='translateY(20px)';
+        change.style.height='400px';
+    }
+</script>
+<body>
+<h1 style="color:cyan">Javascript Tutorial 4</h1>
+<button onclick="showImage('myview', 'myview.jpg')">My View</button>
+<button onclick="showImage('myhouse','myhouse.png')">My House</button>
+<button onclick="showImage('myhobby', 'myhobby.jpg')">My Hobby</button>
+<button id="time" onclick="document.getElementById('time').innerHTML= Date()">Time</button>
+<button onclick="window.print()">Print</button> <br>
+<img id="myview" src="">
+<img id="myhouse" src="">
+<img id="myhobby" src="">
+</body>
+</html>
